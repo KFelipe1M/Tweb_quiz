@@ -1,0 +1,76 @@
+body { /* corpo do css */
+  background-color:white; /*cor de fundo da pagina (Pode trocar por imagem ou gif)*/
+  background-size: cover;   /*faz imagem de fundo cobrir a tela*/
+  background-position: center; /*centraliza a imagem de fundo*/
+  image-rendering: auto; /*renderização que garante a qualidade conforme o navegador*/
+  justify-content: center; /* centraliza os conteúdos com flex*/
+  margin:0;  /*sem margem*/
+  overflow-x: hidden; /* esconde o que ultrapassar a largura da tela*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif /*fontes utilizadas pelo corpo*/
+}
+
+/* Caixa principal */
+#question-container { 
+  background-color: rgb(255, 255, 255); /*cor da caixa*/
+  padding:24px; /*espaçamento dentro da caixa*/
+  font-size:18px; /*tamanho do texto*/
+  font-weight: bold; /* texto está em negrito*/
+  width:900px; /*largura da caixa*/
+  min-height: 450px; /*altura mínima da caixa*/
+  margin:40px auto; /*margem interna da caixa, centralizada com auto*/
+  margin-top:140px; /*distância do topo da página*/
+  box-shadow: 0px 8px 26px;;  /*efeito de sombra para parecer elevado*/
+  border-radius: 8px;  /*arredonda os cantos da caixa*/
+  border:1px solid rgb(204, 203, 203); /*borda fina que está ao redor da caixa*/
+}
+
+/*caixa das alternativas*/
+#options-container { 
+  display: flex; /*organiza as alternativas na caixa com flex*/
+  flex-direction: column; /* são organizados em coluna*/
+  text-align: left; /* o texto começa na direção esquerda*/
+  width: 400px; /* largura da caixa*/
+  height: 400px ; /*altura da caixa*/
+  gap: 40px ; /*espaçamento entre alternativas*/
+  margin-top: 20px; /*espaçamento entre a caixa e o conteúdo em cima*/
+}
+
+
+button { /* botões gerais */
+  padding: 10px 20px; /*espaçamento interno*/
+  font-size: 18px; /*tamanho do texto*/
+  cursor: pointer; /*muda o cursor para uma mão quando passa por cima do botão*/
+  text-align: left; /* texto começa na esquerda*/
+  background-color:#0078D4; /*cor do botâo*/
+  border:none; /*não tem bordas*/
+  display: block; /*ocupa toda a largura*/
+  width: auto; /*largura definida automaticamente*/
+  text-decoration:none; /*remove qualquer decoração do texto*/
+
+}
+
+nav{
+  width:100%; /*largura cobre a tela*/
+  background-color: #0078D4; /*cor da nav*/
+  display:flex; /*se organiza com flex*/
+  justify-content: flex-start; /*alinhado para o início (esquerda)*/
+  align-items: center; /*conteúdo centralizado*/
+  padding:12px 25px;; /*espaçamento interno*/
+}
+
+nav #naav{
+  color:white; /*cor do texto*/
+  font-size:20px; /*tamanho do texo*/
+  font-weight: bold; /*texto está em negrito*/
+}
+
+footer{
+  position:fixed; /*está fixo*/
+  background-color:#0078D4; /*cor é azul*/
+  padding:15px; /*espaçamento interno*/
+  text-align: center; /*texto é centralizado*/
+  font-size:14px; /*tamanho do texto*/
+  color:white; /*cor do texto*/
+  bottom:0; /*está no fundo da tela*/
+  width:100%; /*largura cobre a janela*/
+}

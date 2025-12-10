@@ -1,0 +1,53 @@
+<!--Neste index reutilizei as propriedades do question assim como o css de question (style.css) -Kauã Filipe -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../imagens/logo.png">
+  <title>Perguntas e Respostas</title>
+  <link rel="stylesheet" href="../css/styleindex.css"> <!--conexão com CSS-->
+<!--Para executar o projeto: Selecione o index.html e abra ele com um website ou com o live visualizer.-->
+</head>
+
+<body>
+
+   <!-- NAV (barra do top) -->
+  <nav>
+<div id="naav">Quiz Corporativo Microsoft</div> <!--cabeçalho-->
+  </nav>
+
+
+<!-- html das Questões -->
+<div id="question-container">
+
+  <!-- Configuração do texo inicial -->
+  <h1 style="margin-bottom: 20px;">Bem-vindo ao Quiz Corporativo da Microsoft</h1> 
+
+  <div style="max-width: 700px; line-height: 1.6; font-size: 16px; margin-bottom: 30px;">
+    <p>
+      Este quiz apresenta uma série de perguntas objetivas sobre produtos, serviços e práticas da Microsoft.
+      Cada questão deve ser respondida no momento em que aparece, sem possibilidade de retornar às anteriores.
+      Um temporizador controla o tempo disponível em cada etapa, avançando automaticamente quando o limite é atingido.
+      Ao final, o sistema exibirá o desempenho completo do participante.
+    </p> <!-- Texto simples sobre o quiz -->
+  </div>
+
+  <div style="margin-top: 10px;">
+    <a href="question.html" style="text-decoration: none;">
+      <button>Iniciar ></button>
+    </a>
+  </div>
+
+  </div>  <!--segundo texto-->
+
+  <h2 id="question"></h2>
+  <div id="options-container"></div> 
+  <button> <a href="question.html"> Iniciar ></button></a> <!-- botão de iniciar-->
+</div>
+
+<!-- footer (barra de rodapé -->
+<footer>@Quiz corporativo 2025</footer> <!--texto do rodapé-->
+</body>
+</html>   

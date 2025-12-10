@@ -1,0 +1,114 @@
+body { /* corpo do css */
+  background-color:white; /*cor de fundo da pagina (Pode trocar por imagem ou gif)*/
+  background-size: cover;  /*faz imagem de fundo cobrir a tela*/
+  background-position: center; /*centraliza a imagem de fundo*/
+  background-repeat: no-repeat; /*Impede que a imagem de fundo se repita*/
+  image-rendering: auto; /*renderização que garante a qualidade conforme o navegador*/
+  justify-content: center; /* centraliza os conteúdos com flex*/
+  margin:0; /*sem margem*/
+  overflow: hidden; /*esconde a barra de rolagem se o conteudo ultrapassar a tela*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif /*fontes utilizadas pelo corpo*/
+}
+
+/* Caixa das perguntas */
+#question-container { 
+  background-color: rgb(255, 255, 255); /*cor da caixa*/
+  padding:20px;  /*espaçamento dentro da caixa*/
+  font-size:12px; /*tamanho do texto*/
+  width:90%;  /*largura relativa à tela*/
+  max-width:900px; /*largura máxima*/
+  min-height: 450px; /*altura mínima da caixa*/
+  margin:40px auto; /*margem interna da caixa, centralizada com auto*/
+  margin-top:140px;  /*distância do topo da página*/
+  box-shadow: 0px 8px 26px;;  /*efeito de sombra para parecer elevado*/
+  border-radius: 8px;  /*arredonda os cantos da caixa*/
+  border:1px solid rgb(204, 203, 203); /*borda fina que está ao redor da caixa*/
+}
+/*caixa das alternativas*/
+#options-container { 
+  display: flex; /*organiza as alternativas na caixa com flex*/
+  flex-direction: column; /* são organizados em coluna*/
+  text-align: left; /* o texto começa na direção esquerda*/
+  width: 400px; /* largura da caixa*/
+  height: 400px ; /*altura da caixa*/
+  gap: 40px ; /*espaçamento entre alternativas*/
+  margin-top: 20px; /*espaçamento entre a caixa e o conteúdo em cima*/
+}
+
+button { /* botões de alternativa */
+  padding: 10px 20px; /*espaçamento interno*/
+  font-size: 18px; /*tamanho do texto*/
+  cursor: pointer; /*muda o cursor para uma mão quando passa por cima do botão*/
+  text-align: left; /* texto começa na esquerda*/
+  border-radius: 4px; /*arredonda os cantos do botão*/
+  border:1px solid #cfcfcf; /*borda fina que cobre o botão*/
+  display: block; /*ocupa toda a largura, ignorado por causa do flex*/
+  display: flex; /*organiza o botão com flex*/
+  width: auto; /*largura se ajusta dependendo do tamanho do texto*/
+}
+
+#nextbutton { /* botão de continuar (mesma coisa que alternativas) */
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 4px;
+  border:1px solid #cfcfcf;
+  display: flex;
+  display: block;
+  width: auto;
+}
+
+#result { /* Resultado */
+  margin-top: 20px; /*espaçamento entre o resultado e o que estiver acima dele*/
+  font-weight: bold; /*destaca o texto em negrito*/
+}
+
+nav{
+  position:fixed; /*o elemento está fixo na tela*/
+  top:0; /*o nav está no topo da janela*/
+  left:0; /* o nav fica no lado esquerdo da janela*/
+  width:100%; /* a largura do nav cobre a janela inteira*/
+  background-color: #0078D4; /* cor da barra é azul*/
+  display:flex; /* se organiza com flex*/
+  justify-content: flex-start; /*alinha tudo dentro da barra para o início (à esquerda)*/
+  align-items: center; /*conteúdo é alinhado verticalmente*/
+  padding:12px 25px;; /*espaçamento interno*/
+}
+
+nav #naav{
+  color:white; /*cor do texto*/
+  font-size:20px; /*tamanho do texo*/
+  font-weight: bold; /*texto está em negrito*/
+}
+
+footer{ /*rodapé*/
+  position:fixed; /*está fixo*/
+  background-color:#0078D4; /*cor é azul*/
+  padding:15px; /*espaçamento interno*/
+  text-align: center; /*texto é centralizado*/
+  font-size:14px; /*tamanho do texto*/
+  color:white; /*cor do texto*/
+  bottom:0; /*está no fundo da tela*/
+  left:0; /*inicia na esquerda*/
+  width:100%; /*largura cobre a janela*/
+}
+
+#count{ /* Visual do contador */
+  position:inline-block; /*está fixo*/
+  display: flex; /*se posiciona com flex*/
+  right:30px; /*está posicionado a direita*/
+  top:110px; /*está um pouco abaixo do topo da tela*/
+  font-size: 90px; /*tamanho do texto*/
+  font-weight: bold; /*está em negrito*/
+  color: rgb(0, 0, 0) ; /*cor ignorada*/
+  color: rgb(53, 51, 51) ; /*cor do texto*/
+  margin-bottom:10px;  /*espaçamento abaixo do contador*/
+  font-family:Arial, sans-serif; /*fonte do texto*/
+
+  /*Borda do timer*/
+  padding:2px 6px ;
+  border:4px solid ;
+  border-radius:12px;
+  width:120px;
+}
